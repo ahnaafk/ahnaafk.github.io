@@ -5,7 +5,7 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
   return (
-    <Layout title="neuradao">
+    <Layout title="neuradao ">
       <Container>
         <Title>
         NeuraDAO <Badge>2021</Badge>

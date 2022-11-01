@@ -79,7 +79,7 @@ const Navbar = props => {
             Portfolio
           </LinkItem>
           <LinkItem
-            href="/https://ahnaafk.substack.com"
+            href="https://ahnaafk.substack.com"
             target="_blank"
             path={path}
             display="inline-flex"

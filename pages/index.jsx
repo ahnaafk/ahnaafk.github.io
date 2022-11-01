@@ -150,6 +150,7 @@ const Page = () => {
                   Ahnaaf Khan
                 </Button>
               </Link>
+              </ListItem>
               <ListItem>
                 <Link href="https://twitter.com/ahnaafk" target="_blank">
                   <Button
@@ -160,7 +161,6 @@ const Page = () => {
                     @ahnaafk
                   </Button>
                 </Link>
-              </ListItem>
             </ListItem>
             <ListItem>
               <Link href="https://github.com/ahnaafk" target="_blank">
@@ -196,7 +196,7 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
-          <SimpleGrid columns={[1, 2, 2]} gap={6} >
+          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
             <GridItem
               href="https://neuradao.to"
               title="NeuraDAO"
@@ -206,7 +206,7 @@ const Page = () => {
             </GridItem>
             <GridItem
               href="https://neuradao.to"
-              title="NeuraDAO"
+              title="help"
               thumbnail={placeholder}       
             >
               NeuraDAO

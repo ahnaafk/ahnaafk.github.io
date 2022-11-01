@@ -4,23 +4,24 @@ import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
-  <Box w="100%" align="center">
-    <LinkBox cursor={'pointer'}>
+  <Box w="100%" align="center" suppressHydrationWarning={true}>
+    <LinkBox cursor={'pointer'} suppressHydrationWarning={true}>
       <Image
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"
+        suppressHydrationWarning={true}
       />
-      <LinkOverlay href={href} target="_blank">
-        <Text mt={2} as="b">
+      <LinkOverlay href={href} target="_blank" suppressHydrationWarning={true}>
+        <Text mt={2} as="b" suppressHydrationWarning={true}>
           {title}
         </Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
-    suppressHydrationWarning={true}
+    
   </Box>
 )
 
