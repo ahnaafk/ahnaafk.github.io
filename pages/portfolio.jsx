@@ -26,8 +26,8 @@ const Portfolio = () => {
           Portfolio
         </Heading>
         <Text>
-          Welcome to my Portfolio. In here there&apos;s many of my old work, and
-          some new stuff. I&apos;ll let you browse through.
+          Welcome to my Portfolio. I&apos;ve been primarily focusing on
+          neurotech development, NeuraDAO and full-stack development.  
         </Text>
         <Divider
           my={4}
