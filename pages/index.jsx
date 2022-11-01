@@ -23,7 +23,7 @@ import {
   IoLogoGithub,
   IoLogoBehance,
   IoLogoMedium,
-  IoLogoLinkedin,
+  IoLogoLinkedin
 } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
 import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
@@ -100,7 +100,7 @@ const Page = () => {
           </Text>
           <br />
           <Text as="u" mt={'1rem'}>
-            Past experiences:
+            <Text as="b">Past experiences:</Text>
           </Text>
           <UnorderedList mt={'1rem'}>
             <ListItem>R&D Intern @ Muse</ListItem>
@@ -108,10 +108,25 @@ const Page = () => {
             <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
             <ListItem>Alumni @ TKS Activate</ListItem>
           </UnorderedList>
+          <Section delay={0.2}>
+            <Heading as={'h3'} variant="sub-section-title">
+              As a human.
+            </Heading>
 
+            <Text text-align="centered" mt={4}>
+              In this stage of my life, I&apos;m exploring the world of tech,
+              while writing & tweeting about my journey. <br />
+              <br />I learned a lot throughout TKS about social
+              entrepreneurship, problem-solving, and emerging tech. Now I&apos;m
+              currently learning about how much I don&apos;t know. <br />
+              <br /> Currently reading Thiel, Harari, Naval, Chamath, Clear, and
+              Gates, while listening to Huberman, Parrish, Kanye (his music
+              only), Fridman, and Astro Teller.
+            </Text>
+          </Section>
         </Section>
         <Section>
-        <Heading as="h3" variant="sub-section-title">
+          <Heading as="h3" variant="section-title">
             On My Desk.
           </Heading>
           <SimpleGrid columns={[1, 2, 1]} gap={6} mt={2}>
@@ -120,7 +135,8 @@ const Page = () => {
               title="NeuraDAO"
               thumbnail={ThumbNeuradao}
             >
-              First time founder @ NeuraDAO. We&apos;re building the future of neurotech research. 
+              First time founder @ NeuraDAO. We&apos;re building the future of
+              neurotech research.
             </GridItem>
           </SimpleGrid>
           <Box align="center" my={5}>
@@ -132,21 +148,6 @@ const Page = () => {
           </Box>
         </Section>
 
-        <Section delay={0.2}>
-          <Heading as={'h3'} variant="section-title">
-            As a human.
-          </Heading>
-          <p text-align="centered">
-            In this stage of my life, I&apos;m exploring the world of tech,
-            while writing & tweeting about my journey. <br />
-            <br />I learned a lot throughout TKS about social entrepreneurship,
-            problem-solving, and emerging tech. Now I&apos;m currently learning
-            about how much I don&apos;t know. <br />
-            <br /> Currently reading Thiel, Harari, Naval, Chamath, Clear, and
-            Gates, while listening to Huberman, Parrish, Kanye (his music only),
-            Fridman, and Astro Teller.
-          </p>
-        </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Connect w/ me.
