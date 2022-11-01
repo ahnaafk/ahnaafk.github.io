@@ -10,7 +10,13 @@ import {
 import Section from '../components/section'
 import { PortfolioGridItem, GridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
-import thumbnail from '../public/images/contents/placeholder.png'
+import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
+import ThumbLiberia from '../public/images/contents/thumb-liberia.png'
+import ThumbLeague from '../public/images/contents/thumb-league.png'
+import ThumbShazam from '../public/images/contents/thumb-shazam.png'
+import ThumbDinosaur from '../public/images/contents/thumb-dinosaur.png'
+import ThumbCollision from '../public/images/contents/thumb-collision.png'
+import ThumbDesciday from '../public/images/contents/thumb-desciday.png'
 
 const Portfolio = () => {
   return (
@@ -36,7 +42,7 @@ const Portfolio = () => {
             <PortfolioGridItem
               id="neuradao"
               title="NeuraDAO"
-              thumbnail={thumbnail}
+              thumbnail={ThumbNeuradao}
             >
               First time founder @ NeuraDAO. We&apos;re building the future of
               neurotech research.
@@ -60,7 +66,7 @@ const Portfolio = () => {
             <GridItem
               href="https://www.youtube.com/watch?v=IXb5zh8OdM0"
               title="DeSci Day @ ETHAmsterdam 22: NeuraDAO Pitch"
-              thumbnail={thumbnail}
+              thumbnail={ThumbDesciday}
             >
               At the first ever DeSci Day, I was given the opportunity to pitch
               NeuraDAO onstage.
@@ -70,7 +76,7 @@ const Portfolio = () => {
             <GridItem
               href="https://youtu.be/nAMt23Fjz1A"
               title="Collision 2022: Why Should We Care about Web3 Social Media?"
-              thumbnail={thumbnail}
+              thumbnail={ThumbCollision}
             >
               A panel w/ CEO of AAVE, CMO of Award Pool and I, regarding Web3 x
               Social Media.
@@ -92,9 +98,9 @@ const Portfolio = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
             <PortfolioGridItem
-              id="earthshot"
+              id="liberia"
               title="TKS Earthshot: Electrify Liberia"
-              thumbnail={thumbnail}
+              thumbnail={ThumbLiberia}
             >
               Capstone project @ TKS Activate, where we built a social
               entrepreneurship solution to a real problem to try and solve it.
@@ -104,7 +110,7 @@ const Portfolio = () => {
             <PortfolioGridItem
               id="dinosaur"
               title="Playing The Dino Game With My Brain"
-              thumbnail={thumbnail}
+              thumbnail={ThumbDinosaur}
             >
               My first Brain-Computer Interface project w/ the OpenBCI Ganglion,
               and Brainflow.
@@ -114,7 +120,7 @@ const Portfolio = () => {
             <PortfolioGridItem
               id="league"
               title="Playing League Of Legends With BCIs"
-              thumbnail={thumbnail}
+              thumbnail={ThumbLeague}
             >
               One of my first Brain-Computer Interface projects w/ the OpenBCI
               Ganglion, and Brainflow.
@@ -124,7 +130,7 @@ const Portfolio = () => {
             <GridItem
               href="https://ahnaafk.medium.com/a-shazam-for-your-brain-d42c50ebabe"
               title="A Shazam for Your Brain?"
-              thumbnail={thumbnail}
+              thumbnail={ThumbShazam}
             >
               A more intensive BCI project focusing on stimulus reconstruction
               from the OpenMIIR Dataset.

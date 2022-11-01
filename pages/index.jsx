@@ -21,12 +21,12 @@ import { GridItem } from '../components/grid-item'
 import {
   IoLogoTwitter,
   IoLogoGithub,
-  IoLogoDiscord,
   IoLogoBehance,
   IoLogoMedium,
-  IoLogoLinkedin
+  IoLogoLinkedin,
 } from 'react-icons/io5'
-import placeholder from '../public/images/contents/placeholder.png'
+import { SiGmail } from 'react-icons/si'
+import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
 
 const Page = () => {
   return (
@@ -114,20 +114,13 @@ const Page = () => {
         <Heading as="h3" variant="sub-section-title">
             On My Desk.
           </Heading>
-          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
+          <SimpleGrid columns={[1, 2, 1]} gap={6} mt={2}>
             <GridItem
               href="https://neuradao.to"
               title="NeuraDAO"
-              thumbnail={placeholder}
+              thumbnail={ThumbNeuradao}
             >
-              NeuraDAO
-            </GridItem>
-            <GridItem
-              href="https://neuradao.to"
-              title="help"
-              thumbnail={placeholder}
-            >
-              NeuraDAO
+              First time founder @ NeuraDAO. We&apos;re building the future of neurotech research. 
             </GridItem>
           </SimpleGrid>
           <Box align="center" my={5}>
@@ -174,13 +167,24 @@ const Page = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/ahnaafk" target="_blank">
+              <Link href="mailto:ahnaafk@gmail.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={SiGmail} />}
+                >
+                  ahnaafk@gmail.com
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/ahnaafkk" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
-                  @ahnaafk
+                  @ahnaafkk
                 </Button>
               </Link>
             </ListItem>

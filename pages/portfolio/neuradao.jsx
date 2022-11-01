@@ -10,7 +10,7 @@ const Work = () => {
         <Title>
         NeuraDAO <Badge>2021</Badge>
         </Title>
-        <PortfolioImage src='../../images/contents/placeholder.png' alt='NeuraDAO' />
+        <PortfolioImage src='../../images/contents/thumb-neuradao.png' alt='NeuraDAO' />
         <p>
           A DeSci DAO to accelerate neurotech research & development. We&apos;re
           one of the first DeSci DAOs and are leading the DeSci movement in
