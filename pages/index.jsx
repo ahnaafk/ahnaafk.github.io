@@ -7,13 +7,26 @@ import {
   useColorModeValue,
   UnorderedList,
   ListItem,
+  SimpleGrid,
   Button,
-  Text
+  Text,
+  List,
+  Icon
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { GridItem } from '../components/grid-item'
+import {
+  IoLogoTwitter,
+  IoLogoGithub,
+  IoLogoDiscord,
+  IoLogoBehance,
+  IoLogoMedium,
+  IoLogoLinkedin
+} from 'react-icons/io5'
+import placeholder from '../public/images/contents/placeholder.png'
 
 const Page = () => {
   return (
@@ -28,18 +41,18 @@ const Page = () => {
           align="center"
         >
           Hey! I&apos;m currently looking to talk w/ academics for{' '}
-          <NextLink href="https://neuradao.to/">
-            <Link>NeuraDAO</Link>
-          </NextLink>
+          <Link href="https://neuradao.to/" target="_blank">
+            NeuraDAO
+          </Link>
           . <br />
           If you&apos;re interested, hit this{' '}
-          <NextLink href="https://calendly.com/ahnaaf/1-1">
-            <Link>link</Link>
-          </NextLink>{' '}
+          <Link href="https://calendly.com/ahnaaf/1-1" target="_blank">
+            link
+          </Link>{' '}
           or send me an{' '}
-          <NextLink href="mailto:ahnaaf@neuradao.to">
-            <Link>email!</Link>
-          </NextLink>
+          <Link href="mailto:ahnaaf@neuradao.to" target="_blank">
+            email!
+          </Link>
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -74,9 +87,9 @@ const Page = () => {
             I’m a 17 y/o self-taught web2 + web3 + neurotech developer and
             graphic designer. Currently, I&apos;m building the future of
             neurotech research at {''}
-            <NextLink href="https://neuradao.to/">
-              <Link>NeuraDAO</Link>
-            </NextLink>
+            <Link href="https://neuradao.to" target="_blank">
+              NeuraDAO
+            </Link>
             .
             <br />
             <br />
@@ -97,7 +110,7 @@ const Page = () => {
           </UnorderedList>
           <Box align="center" my={4}>
             <NextLink href={'/portfolio'}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Check out my Portfolio!
               </Button>
             </NextLink>
@@ -109,8 +122,8 @@ const Page = () => {
             As a human.
           </Heading>
           <p text-align="centered">
-            Broadly, I&apos;m exploring the world of tech, while writing &
-            tweeting about my journey. <br />
+            In this stage of my life, I&apos;m exploring the world of tech,
+            while writing & tweeting about my journey. <br />
             <br />I learned a lot throughout TKS about social entrepreneurship,
             problem-solving, and emerging tech. Now I&apos;m currently learning
             about how much I don&apos;t know. <br />
@@ -118,6 +131,87 @@ const Page = () => {
             Gates, while listening to Huberman, Parrish, Kanye (his music only),
             Fridman, and Astro Teller.
           </p>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            Connect w/ me!
+          </Heading>
+          <List>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/ahnaaf-khan/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Ahnaaf Khan
+                </Button>
+              </Link>
+              <ListItem>
+                <Link href="https://twitter.com/ahnaafk" target="_blank">
+                  <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<Icon as={IoLogoTwitter} />}
+                  >
+                    @ahnaafk
+                  </Button>
+                </Link>
+              </ListItem>
+            </ListItem>
+            <ListItem>
+              <Link href="https://github.com/ahnaafk" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @ahnaafk
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://ahnaafk.medium.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoMedium} />}
+                >
+                  @ahnaafk
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.behance.net/ahnaafkhan" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoBehance} />}
+                >
+                  Ahnaaf Khan
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+          <SimpleGrid columns={[1, 2, 2]} gap={6} >
+            <GridItem
+              href="https://neuradao.to"
+              title="NeuraDAO"
+              thumbnail={placeholder}
+            >
+              NeuraDAO
+            </GridItem>
+            <GridItem
+              href="https://neuradao.to"
+              title="NeuraDAO"
+              thumbnail={placeholder}       
+            >
+              NeuraDAO
+            </GridItem>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>

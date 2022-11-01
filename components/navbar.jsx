@@ -19,16 +19,20 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { ST } from 'next/dist/shared/lib/utils'
 import ThemeToggleButton from './theme-toggle-button'
+import { SiSubstack } from 'react-icons/si'
 
-const LinkItem = ({ href, path, children }) => {
+const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha')
   return (
-    <NextLink href={href}>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
-        b={active ? 'glassTeal' : undefined}
+        bg={active ? 'glassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
+        target={target}
+        {...props}
+        rounded='md'
       >
         {children}
       </Link>
@@ -74,8 +78,18 @@ const Navbar = props => {
           <LinkItem href="/portfolio" path={path}>
             Portfolio
           </LinkItem>
-          <LinkItem href="https://ahnaafk.substack.com" passHref>Newsletter</LinkItem>
-          {/* DOESN'T WORK. Will fix this later. */}
+          <LinkItem
+            href="/https://ahnaafk.substack.com"
+            target="_blank"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            
+          >
+            <SiSubstack />
+             {''} Updates
+          </LinkItem>
         </Stack>
         <Box flex={1} mt="3" align="right">
           <ThemeToggleButton />
