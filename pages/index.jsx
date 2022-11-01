@@ -108,10 +108,32 @@ const Page = () => {
             <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
             <ListItem>Alumni @ TKS Activate</ListItem>
           </UnorderedList>
-          <Box align="center" my={4}>
+
+        </Section>
+        <Section>
+        <Heading as="h3" variant="sub-section-title">
+            On My Desk.
+          </Heading>
+          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
+            <GridItem
+              href="https://neuradao.to"
+              title="NeuraDAO"
+              thumbnail={placeholder}
+            >
+              NeuraDAO
+            </GridItem>
+            <GridItem
+              href="https://neuradao.to"
+              title="help"
+              thumbnail={placeholder}
+            >
+              NeuraDAO
+            </GridItem>
+          </SimpleGrid>
+          <Box align="center" my={5}>
             <NextLink href={'/portfolio'}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                Check out my Portfolio!
+                Check out my Portfolio
               </Button>
             </NextLink>
           </Box>
@@ -134,7 +156,7 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            Connect w/ me!
+            Connect w/ me.
           </Heading>
           <List>
             <ListItem>
@@ -150,17 +172,17 @@ const Page = () => {
                   Ahnaaf Khan
                 </Button>
               </Link>
-              </ListItem>
-              <ListItem>
-                <Link href="https://twitter.com/ahnaafk" target="_blank">
-                  <Button
-                    variant="ghost"
-                    colorScheme="teal"
-                    leftIcon={<Icon as={IoLogoTwitter} />}
-                  >
-                    @ahnaafk
-                  </Button>
-                </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/ahnaafk" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @ahnaafk
+                </Button>
+              </Link>
             </ListItem>
             <ListItem>
               <Link href="https://github.com/ahnaafk" target="_blank">
@@ -196,22 +218,6 @@ const Page = () => {
               </Link>
             </ListItem>
           </List>
-          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={2}>
-            <GridItem
-              href="https://neuradao.to"
-              title="NeuraDAO"
-              thumbnail={placeholder}
-            >
-              NeuraDAO
-            </GridItem>
-            <GridItem
-              href="https://neuradao.to"
-              title="help"
-              thumbnail={placeholder}       
-            >
-              NeuraDAO
-            </GridItem>
-          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
