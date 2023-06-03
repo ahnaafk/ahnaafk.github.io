@@ -31,7 +31,7 @@ import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
 const Page = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW={'50%'}>
         <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -40,17 +40,13 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hey! I&apos;m currently looking to talk w/ academics for{' '}
-          <Link href="https://neuradao.to/" target="_blank">
-            NeuraDAO
-          </Link>
-          . <br />
-          If you&apos;re interested, hit this{' '}
-          <Link href="https://calendly.com/ahnaaf/1-1" target="_blank">
+          Hey! I&apos;m currently exploring new domains in climate tech. <br />
+          If you&apos;re down to talk climate, hit this{' '}
+          <Link href="https://calendly.com/ahnaafk/" target="_blank">
             link
           </Link>{' '}
           or send me an{' '}
-          <Link href="mailto:ahnaaf@neuradao.to" target="_blank">
+          <Link href="mailto:ahnaafk@gmail.com" target="_blank">
             email!
           </Link>
         </Box>
@@ -59,7 +55,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Ahnaaf Khan
             </Heading>
-            <p>Founder & Developer</p>
+            <p>Mechatronics Engineering Student & Neurotech Developer</p>
           </Box>
           <Box
             flexShrink={8}
@@ -84,13 +80,9 @@ const Page = () => {
             As a builder.
           </Heading>
           <Text text-align="centered">
-            I’m a 17 y/o self-taught web2 + web3 + neurotech developer and
-            graphic designer. Currently, I&apos;m building the future of
-            neurotech research at {''}
-            <Link href="https://neuradao.to" target="_blank">
-              NeuraDAO
-            </Link>
-            .
+            I’m a 17 y/o self-taught neurotech developer and graphic designer.
+            Currently, I&apos;m figuring out what&apos;s next for me as I join
+            Queen&apos;s University for Mechatronics Engineering.
             <br />
             <br />
             <Text as={'b'}>Stack:</Text> Figma, ReactJS, Python, DaVinci
@@ -103,11 +95,21 @@ const Page = () => {
             <Text as="b">Past experiences:</Text>
           </Text>
           <UnorderedList mt={'1rem'}>
+            <ListItem>Co-Founder @ NeuraDAO</ListItem>
             <ListItem>R&D Intern @ Muse</ListItem>
             <ListItem>PM @ Apollo</ListItem>
             <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
             <ListItem>Alumni @ TKS Activate</ListItem>
           </UnorderedList>
+          <NextLink href={'/portfolio'}>
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="blue"
+              my={'1.5%'}
+            >
+              Check out my Portfolio
+            </Button>
+          </NextLink>
           <Section delay={0.2}>
             <Heading as={'h3'} variant="sub-section-title">
               As a human.
@@ -125,7 +127,7 @@ const Page = () => {
             </Text>
           </Section>
         </Section>
-        <Section>
+        {/* <Section>
           <Heading as="h3" variant="section-title">
             On My Desk.
           </Heading>
@@ -141,12 +143,12 @@ const Page = () => {
           </SimpleGrid>
           <Box align="center" my={5}>
             <NextLink href={'/portfolio'}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="blue">
                 Check out my Portfolio
               </Button>
             </NextLink>
           </Box>
-        </Section>
+        </Section> */}
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
@@ -160,7 +162,7 @@ const Page = () => {
               >
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                   Ahnaaf Khan
@@ -171,7 +173,7 @@ const Page = () => {
               <Link href="mailto:ahnaafk@gmail.com" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={SiGmail} />}
                 >
                   ahnaafk@gmail.com
@@ -182,7 +184,7 @@ const Page = () => {
               <Link href="https://twitter.com/ahnaafkk" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoTwitter} />}
                 >
                   @ahnaafkk
@@ -193,7 +195,7 @@ const Page = () => {
               <Link href="https://github.com/ahnaafk" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
                   @ahnaafk
@@ -204,7 +206,7 @@ const Page = () => {
               <Link href="https://ahnaafk.medium.com" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoMedium} />}
                 >
                   @ahnaafk
@@ -215,7 +217,7 @@ const Page = () => {
               <Link href="https://www.behance.net/ahnaafkhan" target="_blank">
                 <Button
                   variant="ghost"
-                  colorScheme="teal"
+                  colorScheme="blue"
                   leftIcon={<Icon as={IoLogoBehance} />}
                 >
                   Ahnaaf Khan

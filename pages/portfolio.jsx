@@ -21,7 +21,8 @@ import ThumbDesciday from '../public/images/contents/thumb-desciday.png'
 const Portfolio = () => {
   return (
     <Layout>
-      <Container>
+      <Container
+      maxW={"50%"}>
         <Heading as="h1" fontSize={40} mt={4}>
           Portfolio
         </Heading>
