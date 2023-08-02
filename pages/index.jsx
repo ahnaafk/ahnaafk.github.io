@@ -70,7 +70,7 @@ const Page = () => {
               maxWidth="100px"
               display="inline-block"
               borderRadius="full"
-              src="/images/ahnaaf.png"
+              src="/images/headshot.png"
               alt="profile pic"
             />
           </Box>
