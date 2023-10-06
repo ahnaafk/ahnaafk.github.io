@@ -80,7 +80,7 @@ const Page = () => {
             As a builder.
           </Heading>
           <Text text-align="centered">
-            I’m a 17 y/o self-taught neurotech developer and graphic designer.
+            I’m a 18 y/o self-taught neurotech developer and graphic designer.
             Currently, I&apos;m figuring out what&apos;s next for me as I join
             Queen&apos;s University for Mechatronics Engineering.
             <br />
