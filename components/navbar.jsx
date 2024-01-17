@@ -19,7 +19,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { ST } from 'next/dist/shared/lib/utils'
 import ThemeToggleButton from './theme-toggle-button'
-import { SiSubstack } from 'react-icons/si'
+import { SiMedium, SiSubstack } from 'react-icons/si'
 
 const LinkItem = ({ href, path, children, target, ...props }) => {
   const active = path === href
@@ -90,6 +90,18 @@ const Navbar = props => {
             <SiSubstack />
              {''} Updates
           </LinkItem>
+          <LinkItem
+            href="https://ahnaafk.medium.com"
+            target="_blank"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            
+          >
+            <SiMedium />
+             {''} Writing
+          </LinkItem>
         </Stack>
         <Box flex={1} mt="3" align="right">
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -107,8 +119,11 @@ const Navbar = props => {
                 <NextLink href="/portfolio" passHref>
                   <MenuItem as={Link}> Portfolio</MenuItem>
                 </NextLink>
-                <NextLink href="/https://ahnaafk.substack.com/" passHref>
-                  <MenuItem as={Link}> Newsletter</MenuItem>
+                <NextLink href="https://ahnaafk.substack.com/" passHref>
+                  <MenuItem as={Link}> Updates</MenuItem>
+                </NextLink>
+                <NextLink href="https://ahnaafk.medium.com/" passHref>
+                  <MenuItem as={Link}> Writing</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>
