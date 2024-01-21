@@ -31,7 +31,7 @@ import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
 const Page = () => {
   return (
     <Layout>
-      <Container maxW={'50%'}>
+      <Container maxW={'60%'}>
         <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -55,7 +55,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Ahnaaf Khan
             </Heading>
-            <p>Mechatronics Engineering Student & Neurotech Developer</p>
+            <p>Mechatronics Engineering Student & Climate-tech Developer</p>
           </Box>
           <Box
             flexShrink={8}
@@ -80,9 +80,9 @@ const Page = () => {
             As a builder.
           </Heading>
           <Text text-align="centered">
-            I’m a 18 y/o self-taught neurotech developer and graphic designer.
-            Currently, I&apos;m figuring out what&apos;s next for me as I join
-            Queen&apos;s University for Mechatronics Engineering.
+            I’m an 18 y/o self-taught climate-tech developer, project manager, & graphic designer.
+            Currently, I&apos;m figuring out what&apos;s next for me in carbon capture as I 
+            study Mechatronics Engineering at Queen&apos;s University.
             <br />
             <br />
             <Text as={'b'}>Stack:</Text> Figma, ReactJS, Python, DaVinci
