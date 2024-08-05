@@ -78,6 +78,9 @@ const Navbar = props => {
           <LinkItem href="/portfolio" path={path}>
             Portfolio
           </LinkItem>
+          <LinkItem href="/bakehouse" path={path}>
+            Bakehouse
+          </LinkItem>
           <LinkItem
             href="https://ahnaafk.substack.com"
             target="_blank"
