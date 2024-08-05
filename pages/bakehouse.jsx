@@ -71,7 +71,7 @@ const Page = () => {
               <Text>
               That&apos;s what I&apos;m doing here. Hope you enjoy!
               </Text>
-              <Link href="https://instagram.com" isExternal>
+              <Link href="https://www.instagram.com/bakehouse.ahnaafk/" isExternal>
               <Button
                 rightIcon={<ChevronRightIcon />}
                 colorScheme="blue"
