@@ -56,20 +56,20 @@ const Page = () => {
                 Welcome to the House!
               </Heading>
               <Text text-align="centered">
-                We're a pop-up artisanal bakeshop in Bowmanville & Kingston.
+                We&apos;re a pop-up artisanal bakeshop in Bowmanville & Kingston.
                 Currently, we exclusively sell NY-style cheesecakes, check out
                 our menu.
               </Text>
               <br />
               <Text>
-              I started to bake as a hobby when I didn't want to do my engineering homework and 
+              I started to bake as a hobby when I didn&apos;t want to do my engineering homework and 
               since then my skills as a baker have developed quite a bit. 
               A lot of my close friends and family have told me that my cheesecake is really good, 
               and that I should try selling it.
               </Text>
               <br />
               <Text>
-              That's what I'm doing here. Hope you enjoy!
+              That&apos;s what I&apos;m doing here. Hope you enjoy!
               </Text>
               <Link href="https://instagram.com" isExternal>
               <Button
