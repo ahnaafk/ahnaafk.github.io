@@ -77,27 +77,29 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            As a builder.
+            Profesionally.
           </Heading>
           <Text text-align="centered">
-            I’m an 18 y/o self-taught climate-tech developer, project manager, & graphic designer.
-            Currently, I&apos;m figuring out what&apos;s next for me in carbon capture as I 
-            study Mechatronics Engineering at Queen&apos;s University.
+            I&apos;m a mechatronics engineering student exploring solutions to
+            the climate problem.
             <br />
             <br />
-            <Text as={'b'}>Stack:</Text> Figma, ReactJS, Python, DaVinci
-            Resolve, Brain-Computer Interfaces.
+            Currently, I&apos;m doing my undergraduate @ Queen&apos;s University
+            studying Mechatronics Engineering while exploring/writing about
+            different avenues in carbon capture & profitability.
             <br />
-            <Text as={'b'}>Learning:</Text> NextJs, Solidity, PyTorch.
+            <br />
+            <Text as={'b'}>Stack:</Text> Python, C/C++, JavaScript, React,
+            Arduino, SolidWorks, LTSpice, Figma
           </Text>
           <br />
           <Text as="u" mt={'1rem'}>
             <Text as="b">Past experiences:</Text>
           </Text>
           <UnorderedList mt={'1rem'}>
+            <ListItem>Teaching Assistant @ Queen&apos;s University</ListItem>
             <ListItem>Co-Founder @ NeuraDAO</ListItem>
             <ListItem>R&D Intern @ Muse</ListItem>
-            <ListItem>PM @ Apollo</ListItem>
             <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
             <ListItem>Alumni @ TKS Activate</ListItem>
           </UnorderedList>
@@ -112,18 +114,17 @@ const Page = () => {
           </NextLink>
           <Section delay={0.2}>
             <Heading as={'h3'} variant="sub-section-title">
-              As a human.
+              Personally!
             </Heading>
 
             <Text text-align="centered" mt={4}>
-              In this stage of my life, I&apos;m exploring the world of tech,
-              while writing & tweeting about my journey. <br />
-              <br />I learned a lot throughout TKS about social
-              entrepreneurship, problem-solving, and emerging tech. Now I&apos;m
-              currently learning about how much I don&apos;t know. <br />
-              <br /> Currently reading Thiel, Harari, Naval, Chamath, Clear, and
-              Gates, while listening to Huberman, Parrish, Kanye (his music
-              only), Fridman, and Astro Teller.
+              I spend a lot of my free time listening to music, training in Muay
+              Thai, baking/cooking, taking photos, seeing friends, and reading.{' '}
+              <br />
+              <br />
+              In the past 6 months, I started my 2nd year at
+              university, wrote an end of year letter, and
+              started selling cheesecakes.<br />
             </Text>
           </Section>
         </Section>
