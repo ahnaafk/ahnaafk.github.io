@@ -17,6 +17,7 @@ import ThumbShazam from '../public/images/contents/thumb-shazam.png'
 import ThumbDinosaur from '../public/images/contents/thumb-dinosaur.png'
 import ThumbCollision from '../public/images/contents/thumb-collision.png'
 import ThumbDesciday from '../public/images/contents/thumb-desciday.png'
+import ThumbCarbonMemo from '../public/images/contents/thumb-carboncapture.png'
 
 const Portfolio = () => {
   return (
@@ -28,7 +29,7 @@ const Portfolio = () => {
         </Heading>
         <Text>
           Welcome to my Portfolio. I&apos;ve been primarily focusing on
-          neurotech development, NeuraDAO and full-stack development.  
+          climate-tech research, robotics, and writing.  
         </Text>
         <Divider
           my={4}
@@ -36,19 +37,30 @@ const Portfolio = () => {
           borderColor={useColorModeValue('#1a202c', '#eeeeee')}
         />
         <Heading as="h3" fontSize={20} mt={2} mb={4}>
-          Projects
+          On my Desk
         </Heading>
+
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
-          <Section delay={0.3}>
-            <PortfolioGridItem
-              id="neuradao"
-              title="NeuraDAO"
-              thumbnail={ThumbNeuradao}
+        <Section delay={0.3}>
+            <GridItem
+              href="https://ahnaafk.notion.site/Carbon-Capture-Memos-ahnaafk-com-c114f487689e4af1b31ae5cee6ad0d5c"
+              title="Converting CO2 to Graphite"
+              thumbnail={ThumbCarbonMemo}
             >
-              First time founder @ NeuraDAO. We&apos;re building the future of
-              neurotech research.
-            </PortfolioGridItem>
+              A series of memos detailling how I would convert CO2 to graphite electrochemically.
+            </GridItem>
           </Section>
+        {/* <Section delay={0.3}>
+            <GridItem
+              href="https://ahnaafk.notion.site/Carbon-Capture-Memos-ahnaafk-com-c114f487689e4af1b31ae5cee6ad0d5c"
+              title="Converting CO2 to Graphite"
+              thumbnail={ThumbCarbonMemo}
+            >
+              A series of memos detailling how I would convert CO2 to graphite electrochemically.
+            </GridItem>
+          </Section> */}
+         
+
         </SimpleGrid>
 
         <Section delay={0.3} marginBottom={3}>
@@ -97,6 +109,16 @@ const Portfolio = () => {
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.3}>
+          <PortfolioGridItem
+              id="neuradao"
+              title="NeuraDAO"
+              thumbnail={ThumbNeuradao}
+            >
+              First time founder @ NeuraDAO. We&apos;re building the future of
+              neurotech research.
+            </PortfolioGridItem>
+          </Section>
           <Section delay={0.3}>
             <PortfolioGridItem
               id="liberia"
