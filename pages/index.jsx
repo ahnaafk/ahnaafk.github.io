@@ -29,6 +29,8 @@ import { SiGmail } from 'react-icons/si'
 import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
 
 const Page = () => {
+  const profileImageSrc = '/images/headshot.png'; // You can change this dynamically based on your logic
+
   return (
     <Layout>
       <Container maxW={'60%'}>
@@ -40,7 +42,7 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hey! I&apos;m currently exploring new domains in climate tech. <br />
+          Hey! I&apos;m currently exploring new domains in space tech. <br />
           If you&apos;re down to talk climate, hit this{' '}
           <Link href="https://calendly.com/ahnaafk/" target="_blank">
             link
@@ -55,10 +57,10 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Ahnaaf Khan
             </Heading>
-            <p>Mechatronics Engineering Student & Climate-tech Developer</p>
+            <p>Mechatronics & Robotics Engineering Undergraduate @ Queen&apos;s University</p>
           </Box>
           <Box
-            flexShrink={8}
+            flexShrink={0}
             mt={{ base: 4, md: 0 }}
             ml={{ md: 6 }}
             align="center"
@@ -67,24 +69,25 @@ const Page = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="100px"
+              width={{ base: '120px', sm: '140px', md: '150px' }}
+              maxWidth="150px"
               display="inline-block"
               borderRadius="full"
-              src="/images/headshot.png"
+              src={profileImageSrc} // Use the dynamic source here
               alt="profile pic"
             />
           </Box>
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Profesionally.
+            Professionally.
           </Heading>
           <Text text-align="centered">
             I&apos;m a mechatronics engineering student exploring solutions to
             the climate problem.
             <br />
             <br />
-            Currently, I&apos;m doing my undergraduate @ Queen&apos;s University
+            Currently, I&apos;m on an internship year at MDA Space doing my undergraduate @ Queen&apos;s University
             studying Mechatronics Engineering while exploring/writing about
             different avenues in carbon capture & profitability.
             <br />
@@ -97,11 +100,10 @@ const Page = () => {
             <Text as="b">Past experiences:</Text>
           </Text>
           <UnorderedList mt={'1rem'}>
-            <ListItem>Teaching Assistant @ Queen&apos;s University</ListItem>
+            <ListItem>Assistant Course Developer @ Queen&apos;s University</ListItem>
             <ListItem>Co-Founder @ NeuraDAO</ListItem>
             <ListItem>R&D Intern @ Muse</ListItem>
             <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
-            <ListItem>Alumni @ TKS Activate</ListItem>
           </UnorderedList>
           <NextLink href={'/portfolio'}>
             <Button
