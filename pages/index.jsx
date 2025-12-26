@@ -42,12 +42,8 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hey! I&apos;m currently exploring new domains in space tech. <br />
-          If you&apos;re down to talk climate, hit this{' '}
-          <Link href="https://calendly.com/ahnaafk/" target="_blank">
-            link
-          </Link>{' '}
-          or send me an{' '}
+          Hey! I&apos;m currently exploring new domains in space tech and climate tech. <br />
+          If you&apos;d like to talk about either, feel free to send me an{' '}
           <Link href="mailto:ahnaafk@gmail.com" target="_blank">
             email!
           </Link>
