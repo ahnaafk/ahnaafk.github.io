@@ -49,20 +49,20 @@ const Page = () => {
               </Heading>
               <Text text-align="centered">
                 We&apos;re a pop-up artisanal bakeshop in Bowmanville &
-                Kingston. Currently, we exclusively sell NY-style cheesecakes,
+                Kingston. We exclusively sell NY-style cheesecakes,
                 check out our menu.
               </Text>
               <br />
               <Text>
                 I started to bake as a hobby when I didn&apos;t want to do my
                 engineering homework and since then my skills as a baker have
-                developed quite a bit. A lot of my close friends and family have
+                developed. A lot of my close friends and family have
                 told me that my cheesecake is really good, and that I should try
                 selling it.
               </Text>
               <br />
-              <Text>That&apos;s what I&apos;m doing here. Hope you enjoy!</Text>
-              <Link
+              {/* <Text>That&apos;s what I&apos;m doing here. Hope you enjoy!</Text> */}
+              {/* <Link
                 href="https://www.instagram.com/bakehouse.ahnaafk/"
                 isExternal
               >
@@ -74,7 +74,11 @@ const Page = () => {
                 >
                   Order now!
                 </Button>
-              </Link>
+              </Link> */}
+
+              <Heading as="h3" mt={3} variant="section-title" textDecoration='none'>
+                We are currently on a break. See you January 2027!
+              </Heading>
             </Box>
             <Image
               maxWidth="50%"
