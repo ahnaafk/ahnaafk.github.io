@@ -23,7 +23,7 @@ const Portfolio = () => {
   return (
     <Layout>
       <Container
-      maxW={"60%"}>
+      maxW={{ base: '100%', md: '60%' }}>
         <Heading as="h1" fontSize={40} mt={4}>
           Portfolio
         </Heading>

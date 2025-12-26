@@ -33,7 +33,7 @@ const Page = () => {
 
   return (
     <Layout>
-      <Container maxW={'60%'}>
+      <Container maxW={{base: '100%', md: '60%'}}>
         <Box
           borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -159,13 +159,11 @@ const Page = () => {
             </Heading>
 
             <Text text-align="centered" mt={4}>
-              I spend a lot of my free time listening to music, training in Muay
-              Thai, baking/cooking, taking photos, seeing friends, and reading.{' '}
+              I spend my free time listening to music, training in Muay
+              Thai, baking cheesecakes, taking photos, seeing friends, and reading.{' '}
               <br />
               <br />
-              In the past 6 months, I started my 2nd year at
-              university, wrote an end of year letter, and
-              started selling cheesecakes.<br />
+              In the past 6 months, I started my 3rd year at university, learned how to skateboard, and started playing the harmonica. <br />
             </Text>
           </Section>
         </Section>
