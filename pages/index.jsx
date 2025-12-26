@@ -232,7 +232,7 @@ const Page = () => {
                   @ahnaafkk
                 </Button>
               </Link>
-x            </Box>
+            </Box>
             <Box>
               <Link href="https://github.com/ahnaafk" target="_blank">
                 <Button
