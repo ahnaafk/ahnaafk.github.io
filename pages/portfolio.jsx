@@ -42,7 +42,7 @@ const Portfolio = () => {
           On my Desk
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 1]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
 
           <Section delay={0.3}>
           <PortfolioGridItem
