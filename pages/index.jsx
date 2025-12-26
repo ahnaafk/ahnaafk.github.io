@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import {
   Container,
   Box,
@@ -26,7 +27,6 @@ import {
   IoLogoLinkedin
 } from 'react-icons/io5'
 import { SiGmail } from 'react-icons/si'
-import ThumbNeuradao from '../public/images/contents/thumb-neuradao.png'
 
 const Page = () => {
   const profileImageSrc = '/images/headshot.png'; // You can change this dynamically based on your logic
@@ -83,37 +83,76 @@ const Page = () => {
             Professionally.
           </Heading>
           <Text text-align="centered">
-            I&apos;m a mechatronics engineering student exploring solutions to
-            the climate problem.
-            <br />
-            <br />
-            Currently, I&apos;m on an internship year at MDA Space doing my undergraduate @ Queen&apos;s University
-            studying Mechatronics Engineering while exploring/writing about
-            different avenues in carbon capture & profitability.
-            <br />
-            <br />
-            <Text as={'b'}>Stack:</Text> Python, C/C++, JavaScript, React,
+           I&apos;m a mechatronics engineering undergraduate @ Queen&apos;s University with experience across climate tech, 
+           robotics, and neurotech. My best work is done when I’m taking new ideas from 0-1, or working on interesting problems. 
+          </Text>
+
+          <Text mt={'1rem'} mb={'1.5rem'}>
+            Currently, I’m an engineering intern at <Link href="https://www.mda.space/" target="_blank">MDA Space</Link> working with the Guidance, Navigation and Controls group. 
+            With this internship, my goal is to learn control theory and robotics design through the unique challenges presented in space tech. 
+          </Text>
+
+          <Text as="u">
+            <Text as="b">Past Works:</Text>
+          </Text>
+          <UnorderedList mt={'0.5rem'}>
+            <ListItem><Text as="b">Cofounder @ Qlean</Text> - built the premier climate engineering design club at Queen&apos;s University, bringing 40+ engineering students together to build engineering solutions to climate change</ListItem>
+            <ListItem><Text as="b">Assistant Course Developer @ Queen&apos;s University</Text> - Created and redesigned instructional resources adopted by 300+ students per term</ListItem>
+            <ListItem><Text as="b">Assistant AI Instructor @ SureStart</Text> - Launched the inaugural Slingshot Academy: AI Labs at Branksome Hall, designing and delivering curriculum on Generative AI for students with no prior coding experience</ListItem>
+            <ListItem><Text as="b">R&amp;D Intern @ Muse</Text> - Helped launch a consumer neurofeedback product, increasing sleep quality for 200k+ users by 20%</ListItem>
+            <ListItem>Spoke at several conferences around the world, most notably Collision and ETHAmsterdam</ListItem>
+          </UnorderedList>
+          
+          <Text mt={'1rem'} mb={'1rem'}>
+            On my nights and weekends, I write personal essays on my <Link href="https://ahnaafk.substack.com" target="_blank">Substack</Link>, and articles about tech &amp; startups. Here&apos;s a sample of my writing that I&apos;m particularly proud of:
+          </Text>
+
+          <UnorderedList>
+            <ListItem>
+              <Link href="https://www.queensjournal.ca/i-saw-a-glimpse-of-the-future-of-education-with-genai-and-i-hate-it/" target="_blank">
+                I saw a glimpse of the future of education with GenAI, and I hate it
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://ahnaafk.substack.com/p/a-letter-to-2024-ahnaafs-24th-life" target="_blank">
+                A letter to 2024
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://medium.com/@ahnaafk/understanding-dacs-pathways-to-profitability-9755fc4dab2b" target="_blank">
+                Understanding DAC's Pathways to Profitability
+              </Link>
+            </ListItem>
+          </UnorderedList>
+
+          <Text mt={'1.5rem'} mb={'1.5rem'}>
+            <Text as={'b'}>Technologies I&apos;ve worked with:</Text> Python, C/C++, JavaScript, React,
             Arduino, SolidWorks, LTSpice, Figma
           </Text>
-          <br />
-          <Text as="u" mt={'1rem'}>
-            <Text as="b">Past experiences:</Text>
-          </Text>
-          <UnorderedList mt={'1rem'}>
-            <ListItem>Assistant Course Developer @ Queen&apos;s University</ListItem>
-            <ListItem>Co-Founder @ NeuraDAO</ListItem>
-            <ListItem>R&D Intern @ Muse</ListItem>
-            <ListItem>Spoke @ Collision, ETHAmsterdam</ListItem>
-          </UnorderedList>
-          <NextLink href={'/portfolio'}>
-            <Button
-              rightIcon={<ChevronRightIcon />}
-              colorScheme="blue"
-              my={'1.5%'}
-            >
-              Check out my Portfolio
-            </Button>
-          </NextLink>
+
+          <Box display="flex" flexDirection={{ base: "column", md: "row" }} justifyContent={{ base: "center", md: "space-between" }} alignItems="center" gap={{ base: 4, md: 2 }} width="100%">
+            <NextLink href={'/portfolio'}>
+              <Button
+                colorScheme="blue"
+                my={'1.5%'}
+                width={{ base: "100%", md: "auto" }}
+              >
+                Check out my Portfolio
+              </Button>
+            </NextLink>
+            {/* <a href="/resume.pdf" download> */}
+              <Button
+                as="a"
+                href="/resume.pdf"
+                download
+                colorScheme="blue"
+                my={'1.5%'}
+                width={{ base: "100%", md: "auto" }}
+              >
+                Download my Resume
+              </Button>
+            {/* </a> */}
+          </Box>
           <Section delay={0.2}>
             <Heading as={'h3'} variant="sub-section-title">
               Personally!
