@@ -29,7 +29,7 @@ import {
 import { SiGmail } from 'react-icons/si'
 
 const Page = () => {
-  const profileImageSrc = '/images/headshot.png'; // You can change this dynamically based on your logic
+  const profileImageSrc = '/images/headshot.jpeg'; // You can change this dynamically based on your logic
 
   return (
     <Layout>
