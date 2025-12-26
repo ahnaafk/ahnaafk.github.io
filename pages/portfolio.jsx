@@ -18,6 +18,8 @@ import ThumbDinosaur from '../public/images/contents/thumb-dinosaur.png'
 import ThumbCollision from '../public/images/contents/thumb-collision.png'
 import ThumbDesciday from '../public/images/contents/thumb-desciday.png'
 import ThumbCarbonMemo from '../public/images/contents/thumb-carboncapture.png'
+import ThumbQlean from '../public/images/contents/thumb-qlean.png'
+import ThumbMDA from '../public/images/contents/thumb-mda.png'
 
 const Portfolio = () => {
   return (
@@ -41,25 +43,25 @@ const Portfolio = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 1]} gap={6}>
-        <Section delay={0.3}>
-            <GridItem
-              href="https://ahnaafk.notion.site/Carbon-Capture-Memos-ahnaafk-com-c114f487689e4af1b31ae5cee6ad0d5c"
-              title="Converting CO2 to Graphite"
-              thumbnail={ThumbCarbonMemo}
+
+          <Section delay={0.3}>
+          <PortfolioGridItem
+              id="Qlean"
+              title="Qlean, Queen's Climate Engineering Design Club"
+              thumbnail={ThumbQlean}
             >
-              A series of memos detailling how I would convert CO2 to graphite electrochemically.
-            </GridItem>
+              Cofounder of Qlean. Currently building a direct ocean carbon capture system powered by the thermal gradient of the ocean.
+            </PortfolioGridItem>
           </Section>
-        {/* <Section delay={0.3}>
-            <GridItem
-              href="https://ahnaafk.notion.site/Carbon-Capture-Memos-ahnaafk-com-c114f487689e4af1b31ae5cee6ad0d5c"
-              title="Converting CO2 to Graphite"
-              thumbnail={ThumbCarbonMemo}
+           <Section delay={0.3}>
+          <PortfolioGridItem
+              id="MDA"
+              title="MDA Space Engineering Internship"
+              thumbnail={ThumbMDA}
             >
-              A series of memos detailling how I would convert CO2 to graphite electrochemically.
-            </GridItem>
-          </Section> */}
-         
+              Working with the Guidance, Navigation & Controls group at MDA Space.
+            </PortfolioGridItem>
+          </Section>
 
         </SimpleGrid>
 
@@ -104,11 +106,21 @@ const Portfolio = () => {
             borderColor={useColorModeValue('#1a202c', '#eeeeee')}
           />
           <Heading as="h3" fontSize={20} mt={2}>
-            Old Projects
+            Archive
           </Heading>
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.3}>
+            <GridItem
+              href="https://ahnaafk.notion.site/Carbon-Capture-Memos-ahnaafk-com-c114f487689e4af1b31ae5cee6ad0d5c"
+              title="Converting CO2 to Graphite"
+              thumbnail={ThumbCarbonMemo}
+            >
+              A series of memos detailling electrochemical conversion methods for CO2 to graphite.
+            </GridItem>
+          </Section>
+
         <Section delay={0.3}>
           <PortfolioGridItem
               id="neuradao"

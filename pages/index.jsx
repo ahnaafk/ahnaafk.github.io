@@ -190,8 +190,8 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Connect w/ me.
           </Heading>
-          <List>
-            <ListItem>
+          <SimpleGrid columns={{ base: 2, md: 3 }} gap={{ base: 6, md: 4 }} width="100%">
+            <Box>
               <Link
                 href="https://www.linkedin.com/in/ahnaaf-khan/"
                 target="_blank"
@@ -200,67 +200,79 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoLinkedin} />}
+                  width="100%"
+                  height="100%"
                 >
                   Ahnaaf Khan
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
+            </Box>
+            <Box>
               <Link href="mailto:ahnaafk@gmail.com" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={SiGmail} />}
+                  width="100%"
+                  height="100%"
                 >
                   ahnaafk@gmail.com
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
+            </Box>
+            <Box>
               <Link href="https://twitter.com/ahnaafkk" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoTwitter} />}
+                  width="100%"
+                  height="100%"
                 >
                   @ahnaafkk
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
+x            </Box>
+            <Box>
               <Link href="https://github.com/ahnaafk" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoGithub} />}
+                  width="100%"
+                  height="100%"
                 >
                   @ahnaafk
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
+            </Box>
+            <Box>
               <Link href="https://ahnaafk.medium.com" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoMedium} />}
+                  width="100%"
+                  height="100%"
                 >
                   @ahnaafk
                 </Button>
               </Link>
-            </ListItem>
-            <ListItem>
+            </Box>
+            <Box>
               <Link href="https://www.behance.net/ahnaafkhan" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="blue"
                   leftIcon={<Icon as={IoLogoBehance} />}
+                  width="100%"
+                  height="100%"
                 >
                   Ahnaaf Khan
                 </Button>
               </Link>
-            </ListItem>
-          </List>
+            </Box>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
