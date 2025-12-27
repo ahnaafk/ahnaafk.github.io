@@ -8,6 +8,7 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500&f[]=cabinet-grotesk@800&display=swap" rel="stylesheet"/>
+          <link rel="icon" href="favicon.ico" />
         </Head>
         <body> 
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
