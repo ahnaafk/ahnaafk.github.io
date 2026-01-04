@@ -80,17 +80,16 @@ const Page = () => {
           </Heading>
           <Text text-align="centered">
            I&apos;m a mechatronics engineering undergraduate @ Queen&apos;s University with experience across climate tech, 
-           robotics, and neurotech. My best work is done when I’m taking new ideas from 0-1, or working on interesting problems. 
+           robotics, and neurotech. My best work is done when I&apos;m taking new ideas from 0-1, or working on interesting problems. 
           </Text>
 
           <Text mt={'1rem'} mb={'1.5rem'}>
-            Currently, I’m an engineering intern at <Link href="https://www.mda.space/" target="_blank">MDA Space</Link> working with the Guidance, Navigation and Controls group. 
-            With this internship, my goal is to learn control theory and robotics design through the unique challenges presented in space tech. 
+            Currently, I&apos;m an engineering intern at <Link href="https://www.mda.space/" target="_blank">MDA Space</Link> working with the Guidance, Navigation and Controls group. 
+            With this internship, my goal is to learn control theory and robotic design through the unique challenges presented in space tech. 
           </Text>
 
-          <Text as="u">
-            <Text as="b">Past Works:</Text>
-          </Text>
+
+          <Heading variant="sub-sub-section-title">Past Works:</Heading>
           <UnorderedList mt={'0.5rem'}>
             <ListItem><Text as="b">Cofounder @ Qlean</Text> - built the premier climate engineering design club at Queen&apos;s University, bringing 40+ engineering students together to build engineering solutions to climate change</ListItem>
             <ListItem><Text as="b">Assistant Course Developer @ Queen&apos;s University</Text> - Created and redesigned instructional resources adopted by 300+ students per term</ListItem>
@@ -100,7 +99,7 @@ const Page = () => {
           </UnorderedList>
           
           <Text mt={'1rem'} mb={'1rem'}>
-            On my nights and weekends, I write personal essays on my <Link href="https://ahnaafk.substack.com" target="_blank">Substack</Link>, and articles about tech &amp; startups. Here&apos;s a sample of my writing that I&apos;m particularly proud of:
+            On my nights and weekends, I write personal essays on my <Link href="https://ahnaafk.substack.com" target="_blank">Substack</Link>, and articles about tech &amp; startups. Here&apos;s a sample of my writing that I&apos;m proud of:
           </Text>
 
           <UnorderedList>
@@ -132,6 +131,7 @@ const Page = () => {
                 colorScheme="blue"
                 my={'1.5%'}
                 width={{ base: "100%", md: "auto" }}
+                fontFamily="Gambarino"
               >
                 Check out my Portfolio
               </Button>
@@ -144,6 +144,7 @@ const Page = () => {
                 colorScheme="blue"
                 my={'1.5%'}
                 width={{ base: "100%", md: "auto" }}
+                fontFamily="Gambarino"
               >
                 Download my Resume
               </Button>
