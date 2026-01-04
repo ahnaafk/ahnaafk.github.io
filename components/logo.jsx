@@ -23,8 +23,8 @@ const Logo = () => {
                     <Image src={faceImg} width={40} height={40} alt='logo'/>
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                        fontFamily="Satoshi"
-                        fontWeight='800'
+                        fontFamily="Gambarino"
+                        fontWeight='600'
                         ml={3}
                         mb={1}
                         >

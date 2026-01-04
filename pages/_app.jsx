@@ -8,7 +8,7 @@ const Website = ({ Component, pageProps, router }) => {
   return (
     <>
     <Head>
-        <title>Ahnaaf Khan's Website</title>
+        <title>Ahnaaf Khan&apos;s Website</title>
         <meta name="description" content="Portfolio of Ahnaaf Khan" />
     </Head>
     <ChakraProvider theme={theme}>

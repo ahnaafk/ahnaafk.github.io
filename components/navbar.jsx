@@ -56,12 +56,12 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="55%"
+        maxW={{ base: '80%', md: 'container.md' }}
         wrap="wrap"
         align="center"
         justify="space-between"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center">
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -72,8 +72,8 @@ const Navbar = props => {
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
           alignItems="center"
-          flexGrow={1}
           mt={{ base: 4, nmd: 0 }}
+          ml={{ base: 0, md: 6 }}
         >
           <LinkItem href="/portfolio" path={path}>
             Portfolio
@@ -106,31 +106,29 @@ const Navbar = props => {
              {''} Writing
           </LinkItem>
         </Stack>
-        <Box flex={1} mt="3" align="right">
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
-              />
-              <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}> About</MenuItem>
-                </NextLink>
-                <NextLink href="/portfolio" passHref>
-                  <MenuItem as={Link}> Portfolio</MenuItem>
-                </NextLink>
-                <NextLink href="https://ahnaafk.substack.com/" passHref>
-                  <MenuItem as={Link}> Updates</MenuItem>
-                </NextLink>
-                <NextLink href="https://ahnaafk.medium.com/" passHref>
-                  <MenuItem as={Link}> Writing</MenuItem>
-                </NextLink>
-              </MenuList>
-            </Menu>
-          </Box>
+        <Box ml="auto" display={{ base: 'flex', md: 'none' }} alignItems="center">
+          <Menu>
+            <MenuButton
+              as={IconButton}
+              icon={<HamburgerIcon />}
+              variant="outline"
+              aria-label="Options"
+            />
+            <MenuList>
+              <NextLink href="/" passHref>
+                <MenuItem as={Link}> About</MenuItem>
+              </NextLink>
+              <NextLink href="/portfolio" passHref>
+                <MenuItem as={Link}> Portfolio</MenuItem>
+              </NextLink>
+              <NextLink href="https://ahnaafk.substack.com/" passHref>
+                <MenuItem as={Link}> Updates</MenuItem>
+              </NextLink>
+              <NextLink href="https://ahnaafk.medium.com/" passHref>
+                <MenuItem as={Link}> Writing</MenuItem>
+              </NextLink>
+            </MenuList>
+          </Menu>
         </Box>
       </Container>
     </Box>
